@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+body {
+
+    background-color: rgb(0, 0, 0)
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 0.5px solid gray;
+    background-color: black;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   height: 150px;
+   padding: 0;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.navbar a:hover {
+    color: gray;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: green;
+    color: black;
+    padding: 0.7rem 2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.home-container {
+    background: url("/imagens/everything-we-know-about-hogwarts-legacy-1920x1080-f68fc603c1ae.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home-container section {
+display: flex;
+align-items: center;
+min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+
+}
+
+.content h3 {
+    color: white;
+    font-size: 4rem;
+}
+
+.content p {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
