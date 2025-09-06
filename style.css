@@ -18,6 +18,12 @@ section {
     max-width: 1200px;
 }
 
+.logo img {
+    width: 50%;
+    display: flex;
+
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -26,25 +32,28 @@ section {
     z-index: 99;
     border-bottom: 0.5px solid gray;
     background-color: black;
+
 }
 
 .header section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   height: 150px;
-   padding: 0;
+    height: 90px;
+    padding: 0;
 }
 
 .navbar a {
     margin: 0 1rem;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     color: white;
+
+
 }
 
 .navbar a:hover {
     color: gray;
-    font-size: 2rem;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
@@ -56,19 +65,25 @@ section {
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
+    border-radius: 10px;
+}
+
+.btn:hover{
+font-size: 1.9rem;
+letter-spacing: 0.2rem;
 }
 
 .home-container {
-    background: url("/imagens/everything-we-know-about-hogwarts-legacy-1920x1080-f68fc603c1ae.png");
+    background: url("/hogwarts-legacy-dark-edition-official-pc-wallpaper-v0-potn7vwaxyj91.webp");
     background-position: center;
     background-size: cover;
 
 }
 
 .home-container section {
-display: flex;
-align-items: center;
-min-height: 100vh;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .content {
@@ -83,8 +98,16 @@ min-height: 100vh;
 
 .content p {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
 }
+
+section h1 {
+color: white;
+font-size: 2.5rem;
+text-align: center;
+text-transform: uppercase;
+}
+
