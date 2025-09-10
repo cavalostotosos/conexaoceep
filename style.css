@@ -68,9 +68,9 @@ section {
     border-radius: 10px;
 }
 
-.btn:hover{
-font-size: 1.9rem;
-letter-spacing: 0.2rem;
+.btn:hover {
+    font-size: 1.9rem;
+    letter-spacing: 0.2rem;
 }
 
 .home-container {
@@ -92,7 +92,7 @@ letter-spacing: 0.2rem;
 }
 
 .content h3 {
-    color: white;
+    color: #0000ff;
     font-size: 4rem;
 }
 
@@ -105,9 +105,64 @@ letter-spacing: 0.2rem;
 }
 
 section h1 {
-color: white;
-font-size: 2.5rem;
-text-align: center;
-text-transform: uppercase;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
+.horizontalscroll {
+    width: 100%;
+    overflow: auto;
+    margin: 3em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+   anchor-name: --horizontalscroll;
+
+}
+
+.horizontalscroll::-webkit-scrollbar {
+    display: none;
+
+}
+
+.horizontalscroll::scroll-button(right),
+.horizontalscroll::scroll-button(left) {
+    content: '➞';
+    border: none;
+    background-color: #0000ff;
+    font-size: 3em;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: 1em;
+    cursor: pointer;
+position: fixed;
+position-anchor: --horizontalscroll;
+position-area: right center
+
+}
+
+.horizontalscroll::scroll-button(left) {
+    content: '←';
+position-area: left center;
+}
+
+.horizontalscroll::scroll-button(right):disabled,
+.horizontalscroll::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+
+.video {
+    flex: 0 0 20em;
+    height: 30em;
+    background-color: black;
+    padding: 1em;
+    text-align: center;
+    align-content: center;
+
+}
