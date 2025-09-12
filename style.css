@@ -74,7 +74,7 @@ section {
 }
 
 .home-container {
-    background: url("/conexaoceep-main/hogwarts-legacy-dark-edition-official-pc-wallpaper-v0-potn7vwaxyj91.webp");
+    background: url("/hogwarts-legacy-dark-edition-official-pc-wallpaper-v0-potn7vwaxyj91.webp");
     background-position: center;
     background-size: cover;
 
@@ -119,27 +119,7 @@ section h1 {
     gap: 1em;
     scroll-behavior: smooth;
     anchor-name: --horizontalscroll;
-scroll-snap-type: x mandatory;
-scroll-marker-group: after;
-
-}
-
-.horizontalscrol::scroll-marker-group {
-display: flex;
-justify-content: center;
-gap: .5em;
-}
-
-.video::scroll-marker {
-    content: '';
-   height: 1em;
-   width: 1em;
-    background-color: red;
-    border-radius: 50%;
-}
-
-.video::scroll-marker:target-current {
-background-color: red;
+    scroll-snap-type: x mandatory;
 
 }
 
@@ -150,15 +130,14 @@ background-color: red;
 
 .horizontalscroll::scroll-button(right),
 .horizontalscroll::scroll-button(left) {
-    content: '➞';
+    content: '⇨';
     border: none;
-    background-color: #0000ff;
+    background-color: #cc00ff;
     font-size: 3em;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    padding-bottom: 1em;
     cursor: pointer;
     position: fixed;
     position-anchor: --horizontalscroll;
@@ -168,7 +147,7 @@ background-color: red;
 }
 
 .horizontalscroll::scroll-button(left) {
-    content: '←';
+    content: '⇦';
     position-area: left center;
     position-area: left center;
     translate: 50%;
@@ -185,17 +164,24 @@ background-color: red;
     scroll-snap-type: start;
     flex: 0 0 20em;
     aspect-ratio: 5 / 3;
-    height: 30em;
+    height: 25em;
     background-color: black;
     padding: 1em;
     text-align: center;
     align-content: center;
+    
+
 
 }
 
 @media(max-width: 500px) {
-.video {
-    flex: 0 0 100%;
-}
+    .video {
+        flex: 0 0 100%;
+    }
 
 }
+
+
+
+
+
